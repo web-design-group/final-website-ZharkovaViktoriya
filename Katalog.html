@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css\style-grid.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <a href="index.html"><img src="img\logo.png" alt="Логотип"></a>
+        <nav>
+            <a href="#!" class="btn1">Моя 3D-модель</a>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#!">Q&A</a></li>
+                <li><a href="Katalog.html">Каталог</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+                <li><a href="#!">Корзина</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main class="container_katalog">
+        <div class="container">
+            <h1>Каталог</h1>
+            <section class="filters">
+
+                <div class="filter">
+
+                    <input type="checkbox" id="toggle-category" class="filter-toggle">
+                
+                    <label for="toggle-category" class="selected_filter">
+                        <p>Категория</p>
+                        <img src="./img/arrow.png">
+                    </label>
+                
+                    <div class="filter-content">
+                        <p class="cancel-category" data-reset="true">Сбросить</p>
+                        <label for="toggle-category"><p>Животные</p></label>
+                        <label for="toggle-category"><p>Персонажи</p></label>
+                        <label for="toggle-category"><p>Декор</p></label>
+                        <label for="toggle-category"><p>Мемы</p></label>
+                        <label for="toggle-category"><p>Аксессуары</p></label>
+                    </div>
+                
+                </div>
+
+                <div class="filter">
+
+                    <input type="checkbox" id="toggle-material" class="filter-toggle">
+                
+                    <label for="toggle-material" class="selected_filter">
+                        <p>Материал</p>
+                        <img src="./img/arrow.png">
+                    </label>
+                
+                    <div class="filter-content">
+                        <p class="cancel-category" data-reset="true">Сбросить</p>
+                        <label for="toggle-material"><p>PLA</p></label>
+                        <label for="toggle-material"><p>PTEG</p></label>
+                        <label for="toggle-material"><p>SLA</p></label>
+                    </div>
+                
+                </div>
+
+                <div class="filter">
+
+                    <input type="checkbox" id="toggle-size" class="filter-toggle">
+                
+                    <label for="toggle-size" class="selected_filter">
+                        <p>Размер</p>
+                        <img src="./img/arrow.png">
+                    </label>
+                
+                    <div class="filter-content">
+                        <p class="cancel-category" data-reset="true">Сбросить</p>
+                        <label for="toggle-size"><p>5х5х5см</p></label>
+                        <label for="toggle-size"><p>10х10х10см</p></label>
+                        <label for="toggle-size"><p>12х12х12см</p></label>
+                        <label for="toggle-size"><p>15х15х15см</p></label>
+                    </div>
+                
+                </div>
+
+                <div class="filter">
+
+                    <input type="checkbox" id="toggle-price" class="filter-toggle">
+                
+                    <label for="toggle-price" class="selected_filter">
+                        <p>Цена</p>
+                        <img src="./img/arrow.png">
+                    </label>
+                
+                    <div class="filter-content">
+                        <p class="cancel-category" data-reset="true">Сбросить</p>
+                        <label for="toggle-price"><p>300-500</p></label>
+                        <label for="toggle-price"><p>500-1000</p></label>
+                        <label for="toggle-price"><p>1000-2000</p></label>
+                    </div>
+                
+                </div>
+
+            </section>
+            <section class="cards">
+                
+                <div class="card" data-category="Животные" onclick="location.href='Card.html';">
+                    <img src="img\card1.png" alt="Карточка1">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Скелет акулы</p>
+                            <p>₽ 450</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Животные">
+                    <img src="img\card2.png" alt="Карточка2">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Крокодил</p>
+                            <p>₽ 400</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Декор">
+                    <img src="img\card3.png" alt="Карточка3">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Кот в плаще</p>
+                            <p>₽ 550</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Декор">
+                    <img src="img\card4.png" alt="Карточка4">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Кукла</p> 
+                            <p>₽ 650</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Декор">
+                    <img src="img\card5.png" alt="Карточка5">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Скала Хокаге</p>
+                            <p>₽ 990</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Персонажи Мемы">
+                    <img src="img\card6.png" alt="Карточка6">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Ждун</p>
+                            <p>₽ 540</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Декор Персонажи">
+                    <img src="img\card7.png" alt="Карточка7">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Кот с мечом</p>
+                            <p>₽ 450</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Персонажи">
+                    <img src="img\card8.png" alt="Карточка8">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Наруто</p>
+                            <p>₽ 1100</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Декор Мемы">
+                    <img src="img\card9.png" alt="Карточка9">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Лабуба</p>
+                            <p>₽ 400</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Животные">
+                    <img src="img\card10.png" alt="Карточка10">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Акула</p>
+                            <p>₽ 730</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Персонажи">
+                    <img src="img\card11.png" alt="Карточка11">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Стич</p>
+                            <p>₽ 400</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Персонажи Мемы">
+                    <img src="img\card12.png" alt="Карточка12">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Тралалело Тралала</p>
+                            <p>₽ 720</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Животные">
+                    <img src="img\card13.png" alt="Карточка13">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Лягушка</p>
+                            <p>₽ 400</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Животные">
+                    <img src="img\card14.png" alt="Карточка14">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Сфинкс</p>
+                            <p>₽ 600</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Персонажи Мемы">
+                    <img src="img\card15.png" alt="Карточка15">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Тунг Тунг Сахур</p>
+                            <p>₽ 400</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <div class="card" data-category="Животные">
+                    <img src="img\card16.png" alt="Карточка16">
+                    <div class="card-info">
+                        <div class="left">
+                            <p>Толстый кот</p>
+                            <p>₽ 400</p>
+                        </div>
+                        <p class="available">В наличии</p>
+                    </div>
+                </div>
+                <p id="no-results" style="display:none; text-align:center; margin-top:20px;">
+                    По выбранному фильтру нет товаров
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+        <p>АО «ФИГР»<br>Пн-Пт 9:00-21:00<br>+7(999)-888-77-66</p>
+        <p>&copy; Design by Жаркова Виктория 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/filters.js"></script>
+    <script src="js/filters-sort.js"></script>
+</body>
+</html>
