@@ -20,6 +20,10 @@ body{
     line-height: 1;
 }
 
+main{
+    background: url("../img/bg_card1.png") no-repeat right bottom ,url("../img/bg_card2.png") no-repeat left top 10vh;
+}
+
 .container-lg{
     max-width: 1390px;
     padding: 0 15px;
