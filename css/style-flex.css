@@ -314,14 +314,19 @@ footer p:last-of-type {
     width: 100%;
 }
 
-.container_contacts h1{
+.container_contacts h2{
     color:black;
     font-size: 64px;
     font-weight: 600;
-    margin: 40px auto;
+    margin: 40px 0;
 }
 
 .information{
+    display:flex;
+    flex-direction: column;
+}
+
+.info_text{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -330,7 +335,7 @@ footer p:last-of-type {
     padding-bottom: 94px;
 }
 
-.information h3{
+.info_text h3{
     font-weight: 700;
 }
 
