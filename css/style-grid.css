@@ -173,6 +173,11 @@ footer p:last-of-type {
     display: none;
 }
 
+.filter-content.is-open {
+    display: flex;
+    flex-direction: column;
+}
+
 .cancel-category{
     color: #878787;
 }
